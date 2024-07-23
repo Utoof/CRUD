@@ -2,12 +2,11 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "userinfo";
-
-$connection = mysqli_connect($servername,$username,$password,$dbname);
+$passowrd = "";
+$dbname = "allinfo";
 
 
+$connection = mysqli_connect($servername,$username,$passowrd,$dbname);
 
 
 ?>
