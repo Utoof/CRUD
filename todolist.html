@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="row mt-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"> 
+    <input type="text" id="input-box" placeholder="write something">
+        </div>
+        <div class="col-md-3">
+            <button onclick="addtask()"class="btn btn-danger">go</button>
+    
+        </div>
+      </div>
+    
+    
+      <div class="row">
+    
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <ul id="list-icon">
+    
+            </ul>
+            <div class="col-md-3" id="sad"></div>
+        </div>
+      </div>
+    
+<script>
+var inputbox = document.getElementById("input-box")
+var listicon = document.getElementById("list-icon")
+
+ function addtask() {
+    
+ 
+    if(inputbox === ''){
+
+alert("write something yr")
+    }
+    else{
+        var li = document.createElement("li")
+        li.innerHTML = inputbox.value;
+        listicon.appendChild(li)
+    }
+}
+</script>
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
